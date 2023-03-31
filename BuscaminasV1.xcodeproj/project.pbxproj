@@ -16,6 +16,10 @@
 		8851C57E29D6132500AD94EF /* BuscaminasV1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851C57D29D6132500AD94EF /* BuscaminasV1Tests.swift */; };
 		8851C58829D6132500AD94EF /* BuscaminasV1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851C58729D6132500AD94EF /* BuscaminasV1UITests.swift */; };
 		8851C58A29D6132500AD94EF /* BuscaminasV1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851C58929D6132500AD94EF /* BuscaminasV1UITestsLaunchTests.swift */; };
+		8851C59729D6136700AD94EF /* kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 8851C59629D6136700AD94EF /* kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png */; };
+		8851C59929D6155400AD94EF /* btnplay.png in Resources */ = {isa = PBXBuildFile; fileRef = 8851C59829D6155400AD94EF /* btnplay.png */; };
+		8851C59B29D615AD00AD94EF /* records.png in Resources */ = {isa = PBXBuildFile; fileRef = 8851C59A29D615AD00AD94EF /* records.png */; };
+		8851C59F29D61B2A00AD94EF /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851C59E29D61B2A00AD94EF /* InicioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		8851C58329D6132500AD94EF /* BuscaminasV1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuscaminasV1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8851C58729D6132500AD94EF /* BuscaminasV1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaminasV1UITests.swift; sourceTree = "<group>"; };
 		8851C58929D6132500AD94EF /* BuscaminasV1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaminasV1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8851C59629D6136700AD94EF /* kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png"; sourceTree = "<group>"; };
+		8851C59829D6155400AD94EF /* btnplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnplay.png; sourceTree = "<group>"; };
+		8851C59A29D615AD00AD94EF /* records.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = records.png; sourceTree = "<group>"; };
+		8851C59E29D61B2A00AD94EF /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +110,12 @@
 				8851C56629D6132400AD94EF /* AppDelegate.swift */,
 				8851C56829D6132400AD94EF /* SceneDelegate.swift */,
 				8851C56A29D6132400AD94EF /* ViewController.swift */,
+				8851C59E29D61B2A00AD94EF /* InicioViewController.swift */,
 				8851C56C29D6132400AD94EF /* Main.storyboard */,
 				8851C56F29D6132400AD94EF /* Assets.xcassets */,
+				8851C59A29D615AD00AD94EF /* records.png */,
+				8851C59829D6155400AD94EF /* btnplay.png */,
+				8851C59629D6136700AD94EF /* kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png */,
 				8851C57129D6132400AD94EF /* LaunchScreen.storyboard */,
 				8851C57429D6132400AD94EF /* Info.plist */,
 			);
@@ -231,9 +243,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8851C59B29D615AD00AD94EF /* records.png in Resources */,
 				8851C57329D6132400AD94EF /* LaunchScreen.storyboard in Resources */,
 				8851C57029D6132400AD94EF /* Assets.xcassets in Resources */,
+				8851C59929D6155400AD94EF /* btnplay.png in Resources */,
 				8851C56E29D6132400AD94EF /* Main.storyboard in Resources */,
+				8851C59729D6136700AD94EF /* kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +276,7 @@
 				8851C56B29D6132400AD94EF /* ViewController.swift in Sources */,
 				8851C56729D6132400AD94EF /* AppDelegate.swift in Sources */,
 				8851C56929D6132400AD94EF /* SceneDelegate.swift in Sources */,
+				8851C59F29D61B2A00AD94EF /* InicioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

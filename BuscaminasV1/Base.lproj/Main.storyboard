@@ -1,24 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YAP-sx-gwe">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BuscaminasV1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png" translatesAutoresizingMaskIntoConstraints="NO" id="M5Z-2J-oiW">
+                                <rect key="frame" x="65" y="290" width="260" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="qBB-o6-QUw"/>
+                                    <constraint firstAttribute="height" constant="264" id="sYx-cy-6tJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M5Z-2J-oiW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="G3W-ev-bGc"/>
+                            <constraint firstItem="M5Z-2J-oiW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qxr-lq-8tf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="55.725190839694655" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dnN-70-OZ0">
+            <objects>
+                <viewController id="z3B-P2-oAZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q8w-ZT-nu4">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUSCAMINAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1a-Sk-sei">
+                                <rect key="frame" x="112.66666666666667" y="62" width="164.66666666666663" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="QQr-lp-1Km"/>
+                                    <constraint firstAttribute="width" constant="164.5" id="oMZ-b9-Wlc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="records.png" translatesAutoresizingMaskIntoConstraints="NO" id="LK3-Hg-1qj">
+                                <rect key="frame" x="107" y="434.33333333333331" width="176" height="142.99999999999994"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LK3-Hg-1qj" secondAttribute="height" multiplier="107:87" id="kKp-Be-84T"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnplay.png" translatesAutoresizingMaskIntoConstraints="NO" id="tkH-XK-6hP">
+                                <rect key="frame" x="107" y="288" width="176" height="131.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tkH-XK-6hP" secondAttribute="height" multiplier="216:161" id="Su8-8D-37C"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="654-o6-XQj"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LK3-Hg-1qj" firstAttribute="centerX" secondItem="q8w-ZT-nu4" secondAttribute="centerX" id="46M-XP-pkH"/>
+                            <constraint firstItem="LK3-Hg-1qj" firstAttribute="leading" secondItem="654-o6-XQj" secondAttribute="leading" constant="107" id="747-bI-O2H"/>
+                            <constraint firstItem="654-o6-XQj" firstAttribute="trailing" secondItem="LK3-Hg-1qj" secondAttribute="trailing" constant="107" id="HTr-h4-vZ0"/>
+                            <constraint firstItem="tkH-XK-6hP" firstAttribute="leading" secondItem="654-o6-XQj" secondAttribute="leading" constant="107" id="Ygr-17-sRh"/>
+                            <constraint firstItem="tkH-XK-6hP" firstAttribute="top" secondItem="q8w-ZT-nu4" secondAttribute="top" constant="288" id="ZqT-CX-dli"/>
+                            <constraint firstItem="654-o6-XQj" firstAttribute="trailing" secondItem="tkH-XK-6hP" secondAttribute="trailing" constant="107" id="Zx2-80-mPg"/>
+                            <constraint firstItem="F1a-Sk-sei" firstAttribute="top" secondItem="654-o6-XQj" secondAttribute="top" constant="15" id="ekW-hc-4z9"/>
+                            <constraint firstItem="F1a-Sk-sei" firstAttribute="centerX" secondItem="q8w-ZT-nu4" secondAttribute="centerX" id="hgW-FJ-l0O"/>
+                            <constraint firstItem="LK3-Hg-1qj" firstAttribute="top" secondItem="tkH-XK-6hP" secondAttribute="bottom" constant="15" id="icB-N5-OTd"/>
+                            <constraint firstItem="tkH-XK-6hP" firstAttribute="centerX" secondItem="q8w-ZT-nu4" secondAttribute="centerX" id="jxT-gP-z0M"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="spg-VJ-itT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748.59813084112147" y="2.5917926565874732"/>
+        </scene>
+        <!--Inicio View Controller-->
+        <scene sceneID="Dpe-L3-xzz">
+            <objects>
+                <viewController id="YAP-sx-gwe" customClass="InicioViewController" customModule="BuscaminasV1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ish-sJ-Mjv">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LvJ-48-QAp">
+                                <rect key="frame" x="0.0" y="173" width="390" height="637"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3ln-Se-hIy">
+                                    <size key="itemSize" width="46" height="45"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="CIY-ua-YDL">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="x11-3B-Swf">
+                                            <rect key="frame" x="0.0" y="0.0" width="46" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5bs-T1-BlB"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="LvJ-48-QAp" firstAttribute="centerX" secondItem="ish-sJ-Mjv" secondAttribute="centerX" id="HNA-7u-jYm"/>
+                            <constraint firstItem="LvJ-48-QAp" firstAttribute="leading" secondItem="5bs-T1-BlB" secondAttribute="leading" id="UIz-kL-BhF"/>
+                            <constraint firstItem="LvJ-48-QAp" firstAttribute="trailing" secondItem="5bs-T1-BlB" secondAttribute="trailing" id="h5J-zg-MBi"/>
+                            <constraint firstItem="LvJ-48-QAp" firstAttribute="bottom" secondItem="5bs-T1-BlB" secondAttribute="bottom" id="jNc-2Q-rfd"/>
+                            <constraint firstItem="LvJ-48-QAp" firstAttribute="top" secondItem="5bs-T1-BlB" secondAttribute="top" constant="126" id="mHm-La-5mD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="LvJ-48-QAp" id="fho-Lz-vUr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IZt-G6-R7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1498.4615384615383" y="-4.2654028436018958"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btnplay.png" width="216" height="188"/>
+        <image name="kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png" width="535" height="535"/>
+        <image name="records.png" width="214" height="206"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
