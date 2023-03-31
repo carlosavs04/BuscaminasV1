@@ -22,6 +22,10 @@
 		887D529229D778600067D26F /* Celdas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D529129D778600067D26F /* Celdas.swift */; };
 		887D529429D7790B0067D26F /* Buscaminas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D529329D7790B0067D26F /* Buscaminas.swift */; };
 		887D529829D780660067D26F /* BuscaminasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D529729D780660067D26F /* BuscaminasCollectionViewCell.swift */; };
+		887E26E829D784A9000BC93C /* flag@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887E26E529D784A9000BC93C /* flag@3x.png */; };
+		887E26E929D784A9000BC93C /* flag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 887E26E629D784A9000BC93C /* flag@2x.png */; };
+		887E26EA29D784A9000BC93C /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 887E26E729D784A9000BC93C /* flag.png */; };
+		887E26F029D7854B000BC93C /* cellover.png in Resources */ = {isa = PBXBuildFile; fileRef = 887E26EF29D7854B000BC93C /* cellover.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		887D529129D778600067D26F /* Celdas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celdas.swift; sourceTree = "<group>"; };
 		887D529329D7790B0067D26F /* Buscaminas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buscaminas.swift; sourceTree = "<group>"; };
 		887D529729D780660067D26F /* BuscaminasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaminasCollectionViewCell.swift; sourceTree = "<group>"; };
+		887E26E529D784A9000BC93C /* flag@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "flag@3x.png"; path = "../../../imgs/flag@3x.png"; sourceTree = "<group>"; };
+		887E26E629D784A9000BC93C /* flag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "flag@2x.png"; path = "../../../imgs/flag@2x.png"; sourceTree = "<group>"; };
+		887E26E729D784A9000BC93C /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flag.png; path = ../../../imgs/flag.png; sourceTree = "<group>"; };
+		887E26EF29D7854B000BC93C /* cellover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellover.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +125,8 @@
 				887D529329D7790B0067D26F /* Buscaminas.swift */,
 				8851C56A29D6132400AD94EF /* ViewController.swift */,
 				887D529729D780660067D26F /* BuscaminasCollectionViewCell.swift */,
+				887E26EC29D784F5000BC93C /* celdas */,
+				887E26E429D78435000BC93C /* flags */,
 				8851C56C29D6132400AD94EF /* Main.storyboard */,
 				8851C56F29D6132400AD94EF /* Assets.xcassets */,
 				8851C59A29D615AD00AD94EF /* records.png */,
@@ -143,6 +153,24 @@
 				8851C58929D6132500AD94EF /* BuscaminasV1UITestsLaunchTests.swift */,
 			);
 			path = BuscaminasV1UITests;
+			sourceTree = "<group>";
+		};
+		887E26E429D78435000BC93C /* flags */ = {
+			isa = PBXGroup;
+			children = (
+				887E26E729D784A9000BC93C /* flag.png */,
+				887E26E629D784A9000BC93C /* flag@2x.png */,
+				887E26E529D784A9000BC93C /* flag@3x.png */,
+			);
+			path = flags;
+			sourceTree = "<group>";
+		};
+		887E26EC29D784F5000BC93C /* celdas */ = {
+			isa = PBXGroup;
+			children = (
+				887E26EF29D7854B000BC93C /* cellover.png */,
+			);
+			path = celdas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,9 +279,13 @@
 			files = (
 				8851C59B29D615AD00AD94EF /* records.png in Resources */,
 				8851C57329D6132400AD94EF /* LaunchScreen.storyboard in Resources */,
+				887E26EA29D784A9000BC93C /* flag.png in Resources */,
+				887E26E929D784A9000BC93C /* flag@2x.png in Resources */,
 				8851C57029D6132400AD94EF /* Assets.xcassets in Resources */,
+				887E26F029D7854B000BC93C /* cellover.png in Resources */,
 				8851C59929D6155400AD94EF /* btnplay.png in Resources */,
 				8851C56E29D6132400AD94EF /* Main.storyboard in Resources */,
+				887E26E829D784A9000BC93C /* flag@3x.png in Resources */,
 				8851C59729D6136700AD94EF /* kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YAP-sx-gwe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -88,64 +86,137 @@
             </objects>
             <point key="canvasLocation" x="748.59813084112147" y="2.5917926565874732"/>
         </scene>
-        <!--Inicio View Controller-->
-        <scene sceneID="Dpe-L3-xzz">
+        <!--View Controller-->
+        <scene sceneID="Edp-JM-Fd2">
             <objects>
-                <viewController id="YAP-sx-gwe" customClass="InicioViewController" customModule="BuscaminasV1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ish-sJ-Mjv">
+                <viewController id="der-gT-GXK" customClass="ViewController" customModule="BuscaminasV1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1vV-mV-lul">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LvJ-48-QAp">
-                                <rect key="frame" x="0.0" y="173" width="390" height="637"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3ln-Se-hIy">
-                                    <size key="itemSize" width="46" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buscaminas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTq-xB-v6f">
+                                <rect key="frame" x="0.0" y="47" width="389.33333333333331" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Fpf-pb-aiv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-nM-dcg" userLabel="Header Stack View">
+                                <rect key="frame" x="0.0" y="122" width="389.33333333333331" height="125"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtw-N0-ssr">
+                                        <rect key="frame" x="0.0" y="45.333333333333343" width="97.333333333333329" height="34.333333333333343"/>
+                                        <color key="tintColor" red="0.8156862855" green="0.36470589040000001" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Jugar"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dzD-O7-5go" userLabel="Left Buttons Stack View">
+                                        <rect key="frame" x="97.333333333333343" y="50.666666666666657" width="97.333333333333343" height="24"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfI-YS-hby" userLabel="Flag Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="24"/>
+                                                <state key="normal" image="flag.png"/>
+                                                <connections>
+                                                    <action selector="flagButton:" destination="der-gT-GXK" eventType="touchUpInside" id="L5u-FF-xH5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJ1-0y-TJd" userLabel="Stopwatch Label">
+                                        <rect key="frame" x="194.66666666666666" y="37.666666666666657" width="97.333333333333343" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="fFi-6K-GIe"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="pIH-hn-rKK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="pTK-Z6-9kW" userLabel="Right Buttons Stack View">
+                                        <rect key="frame" x="292" y="37.666666666666657" width="97.333333333333314" height="50"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="1MN-oq-atD"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f8r-Yv-tQF">
+                                <rect key="frame" x="0.0" y="247" width="389.33333333333331" height="563"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="H9W-65-i4h">
+                                    <size key="itemSize" width="24" height="24"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="CIY-ua-YDL">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="45"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MinefieldCell" id="qNm-eq-wvh" customClass="MinefieldCollectionViewCell" customModule="BuscaminasV1" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="24" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="x11-3B-Swf">
-                                            <rect key="frame" x="0.0" y="0.0" width="46" height="45"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </collectionViewCellContentView>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="haT-bc-RxB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellover.png" translatesAutoresizingMaskIntoConstraints="NO" id="UC3-1g-FUL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="UC3-1g-FUL" firstAttribute="bottom" secondItem="qNm-eq-wvh" secondAttribute="bottom" id="29T-Uu-ZHR"/>
+                                            <constraint firstItem="UC3-1g-FUL" firstAttribute="leading" secondItem="qNm-eq-wvh" secondAttribute="leading" id="2Cc-RS-6fK"/>
+                                            <constraint firstItem="haT-bc-RxB" firstAttribute="leading" secondItem="qNm-eq-wvh" secondAttribute="leading" id="IQo-e2-kQK"/>
+                                            <constraint firstItem="UC3-1g-FUL" firstAttribute="trailing" secondItem="qNm-eq-wvh" secondAttribute="trailing" id="Ka7-yE-GB0"/>
+                                            <constraint firstItem="haT-bc-RxB" firstAttribute="trailing" secondItem="qNm-eq-wvh" secondAttribute="trailing" id="N5R-MJ-Ua3"/>
+                                            <constraint firstItem="haT-bc-RxB" firstAttribute="top" secondItem="qNm-eq-wvh" secondAttribute="top" id="ilz-hX-RNg"/>
+                                            <constraint firstItem="UC3-1g-FUL" firstAttribute="top" secondItem="qNm-eq-wvh" secondAttribute="top" id="jCp-UM-h01"/>
+                                            <constraint firstItem="haT-bc-RxB" firstAttribute="bottom" secondItem="qNm-eq-wvh" secondAttribute="bottom" id="kY1-28-HlX"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="bottomImageView" destination="haT-bc-RxB" id="whu-kS-qfH"/>
+                                            <outlet property="topImageView" destination="UC3-1g-FUL" id="PsO-Jl-xrZ"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="5bs-T1-BlB"/>
-                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <viewLayoutGuide key="safeArea" id="vIW-V5-6Aq"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LvJ-48-QAp" firstAttribute="centerX" secondItem="ish-sJ-Mjv" secondAttribute="centerX" id="HNA-7u-jYm"/>
-                            <constraint firstItem="LvJ-48-QAp" firstAttribute="leading" secondItem="5bs-T1-BlB" secondAttribute="leading" id="UIz-kL-BhF"/>
-                            <constraint firstItem="LvJ-48-QAp" firstAttribute="trailing" secondItem="5bs-T1-BlB" secondAttribute="trailing" id="h5J-zg-MBi"/>
-                            <constraint firstItem="LvJ-48-QAp" firstAttribute="bottom" secondItem="5bs-T1-BlB" secondAttribute="bottom" id="jNc-2Q-rfd"/>
-                            <constraint firstItem="LvJ-48-QAp" firstAttribute="top" secondItem="5bs-T1-BlB" secondAttribute="top" constant="126" id="mHm-La-5mD"/>
+                            <constraint firstItem="f8r-Yv-tQF" firstAttribute="leading" secondItem="vIW-V5-6Aq" secondAttribute="leading" id="0EX-fy-vz4"/>
+                            <constraint firstItem="fXR-nM-dcg" firstAttribute="trailing" secondItem="vIW-V5-6Aq" secondAttribute="trailing" id="BnB-4X-jBl"/>
+                            <constraint firstItem="f8r-Yv-tQF" firstAttribute="bottom" secondItem="vIW-V5-6Aq" secondAttribute="bottom" id="Fro-9C-JwC"/>
+                            <constraint firstItem="f8r-Yv-tQF" firstAttribute="top" secondItem="fXR-nM-dcg" secondAttribute="bottom" id="NQ4-YE-6Tp"/>
+                            <constraint firstItem="f8r-Yv-tQF" firstAttribute="trailing" secondItem="vIW-V5-6Aq" secondAttribute="trailing" id="RNr-6c-MIc"/>
+                            <constraint firstItem="vTq-xB-v6f" firstAttribute="leading" secondItem="1vV-mV-lul" secondAttribute="leading" id="RpU-SB-AtA"/>
+                            <constraint firstItem="vTq-xB-v6f" firstAttribute="trailing" secondItem="1vV-mV-lul" secondAttribute="trailing" id="eAL-AQ-aTT"/>
+                            <constraint firstItem="fXR-nM-dcg" firstAttribute="top" secondItem="vTq-xB-v6f" secondAttribute="bottom" id="jFV-vq-RiQ"/>
+                            <constraint firstItem="vTq-xB-v6f" firstAttribute="top" secondItem="vIW-V5-6Aq" secondAttribute="top" id="nsS-en-id9"/>
+                            <constraint firstItem="fXR-nM-dcg" firstAttribute="leading" secondItem="vIW-V5-6Aq" secondAttribute="leading" id="sUb-Yb-yQc"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="LvJ-48-QAp" id="fho-Lz-vUr"/>
+                        <outlet property="collectionView" destination="f8r-Yv-tQF" id="MDS-dU-8I4"/>
+                        <outlet property="flagButton" destination="kfI-YS-hby" id="3sL-t0-O3J"/>
+                        <outlet property="stopwatchLabel" destination="GJ1-0y-TJd" id="Jbo-0n-zsH"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IZt-G6-R7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Omk-mp-FVu" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1498.4615384615383" y="-4.2654028436018958"/>
+            <point key="canvasLocation" x="1422" y="2"/>
         </scene>
     </scenes>
     <resources>
         <image name="btnplay.png" width="216" height="188"/>
+        <image name="cellover.png" width="24" height="24"/>
+        <image name="flag.png" width="24" height="24"/>
         <image name="kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png" width="535" height="535"/>
         <image name="records.png" width="214" height="206"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
