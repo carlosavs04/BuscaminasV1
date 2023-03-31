@@ -19,7 +19,9 @@
 		8851C59729D6136700AD94EF /* kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 8851C59629D6136700AD94EF /* kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png */; };
 		8851C59929D6155400AD94EF /* btnplay.png in Resources */ = {isa = PBXBuildFile; fileRef = 8851C59829D6155400AD94EF /* btnplay.png */; };
 		8851C59B29D615AD00AD94EF /* records.png in Resources */ = {isa = PBXBuildFile; fileRef = 8851C59A29D615AD00AD94EF /* records.png */; };
-		8851C59F29D61B2A00AD94EF /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851C59E29D61B2A00AD94EF /* InicioViewController.swift */; };
+		887D529229D778600067D26F /* Celdas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D529129D778600067D26F /* Celdas.swift */; };
+		887D529429D7790B0067D26F /* Buscaminas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D529329D7790B0067D26F /* Buscaminas.swift */; };
+		887D529829D780660067D26F /* BuscaminasCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D529729D780660067D26F /* BuscaminasCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +58,9 @@
 		8851C59629D6136700AD94EF /* kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png"; sourceTree = "<group>"; };
 		8851C59829D6155400AD94EF /* btnplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnplay.png; sourceTree = "<group>"; };
 		8851C59A29D615AD00AD94EF /* records.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = records.png; sourceTree = "<group>"; };
-		8851C59E29D61B2A00AD94EF /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
+		887D529129D778600067D26F /* Celdas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Celdas.swift; sourceTree = "<group>"; };
+		887D529329D7790B0067D26F /* Buscaminas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buscaminas.swift; sourceTree = "<group>"; };
+		887D529729D780660067D26F /* BuscaminasCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaminasCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +113,10 @@
 			children = (
 				8851C56629D6132400AD94EF /* AppDelegate.swift */,
 				8851C56829D6132400AD94EF /* SceneDelegate.swift */,
+				887D529129D778600067D26F /* Celdas.swift */,
+				887D529329D7790B0067D26F /* Buscaminas.swift */,
 				8851C56A29D6132400AD94EF /* ViewController.swift */,
-				8851C59E29D61B2A00AD94EF /* InicioViewController.swift */,
+				887D529729D780660067D26F /* BuscaminasCollectionViewCell.swift */,
 				8851C56C29D6132400AD94EF /* Main.storyboard */,
 				8851C56F29D6132400AD94EF /* Assets.xcassets */,
 				8851C59A29D615AD00AD94EF /* records.png */,
@@ -273,10 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				887D529829D780660067D26F /* BuscaminasCollectionViewCell.swift in Sources */,
 				8851C56B29D6132400AD94EF /* ViewController.swift in Sources */,
 				8851C56729D6132400AD94EF /* AppDelegate.swift in Sources */,
+				887D529229D778600067D26F /* Celdas.swift in Sources */,
 				8851C56929D6132400AD94EF /* SceneDelegate.swift in Sources */,
-				8851C59F29D61B2A00AD94EF /* InicioViewController.swift in Sources */,
+				887D529429D7790B0067D26F /* Buscaminas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
