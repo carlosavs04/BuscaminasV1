@@ -14,10 +14,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var btnFlag: UIButton!
     @IBOutlet weak var lblTiempoRecord: UILabel!
-   
     @IBOutlet weak var btnplay: UIButton!
-    
-    
     
     var numeroDeCeldas = 64
     var numeroDeMinas = 10
@@ -325,6 +322,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         nuevoJuego = true
         gameOver = false
         millis = 0
+        self.tiempoRecord?.invalidate()
         
         buscaminas = Buscaminas()
         iniciarJuego()
@@ -366,7 +364,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         return false
     }
-    
     
     
     @IBAction func backtoMain(_ sender: Any)
