@@ -14,6 +14,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var btnFlag: UIButton!
     @IBOutlet weak var lblTiempoRecord: UILabel!
+   
+    @IBOutlet weak var btnplay: UIButton!
+    
+    
     
     var numeroDeCeldas = 64
     var numeroDeMinas = 10
@@ -30,6 +34,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        btnplay.layer.cornerRadius = 7.0
         
         iniciarJuego()
     }
@@ -361,5 +366,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         return false
     }
+    
+    
+    
+    @IBAction func backtoMain(_ sender: Any)
+    {
+        self.dismiss(animated: true)
+    }
+    
 }
 

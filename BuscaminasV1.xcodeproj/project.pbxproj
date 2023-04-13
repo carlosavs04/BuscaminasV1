@@ -22,6 +22,8 @@
 		8821932729E8729500841026 /* flagbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8821932429E8729500841026 /* flagbutton.png */; };
 		8821932929E872A200841026 /* wrongflag.png in Resources */ = {isa = PBXBuildFile; fileRef = 8821932829E872A200841026 /* wrongflag.png */; };
 		8821932B29E872D100841026 /* blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8821932A29E872D100841026 /* blank@2x.png */; };
+		8836D7A929E8AC1A00668B39 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8836D7A829E8AC1A00668B39 /* SplashViewController.swift */; };
+		8836D7AB29E8ACE300668B39 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8836D7AA29E8ACE300668B39 /* MainViewController.swift */; };
 		8851C56729D6132400AD94EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851C56629D6132400AD94EF /* AppDelegate.swift */; };
 		8851C56929D6132400AD94EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851C56829D6132400AD94EF /* SceneDelegate.swift */; };
 		8851C56B29D6132400AD94EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8851C56A29D6132400AD94EF /* ViewController.swift */; };
@@ -73,6 +75,8 @@
 		8821932429E8729500841026 /* flagbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flagbutton.png; path = imgs_buscaminitas/flagbutton.png; sourceTree = SOURCE_ROOT; };
 		8821932829E872A200841026 /* wrongflag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wrongflag.png; path = imgs_buscaminitas/wrongflag.png; sourceTree = SOURCE_ROOT; };
 		8821932A29E872D100841026 /* blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blank@2x.png"; path = "imgs_buscaminitas/blank@2x.png"; sourceTree = SOURCE_ROOT; };
+		8836D7A829E8AC1A00668B39 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		8836D7AA29E8ACE300668B39 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8851C56329D6132400AD94EF /* BuscaminasV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuscaminasV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8851C56629D6132400AD94EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8851C56829D6132400AD94EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 				887D529129D778600067D26F /* Celdas.swift */,
 				887D529329D7790B0067D26F /* Buscaminas.swift */,
 				8851C56A29D6132400AD94EF /* ViewController.swift */,
+				8836D7AA29E8ACE300668B39 /* MainViewController.swift */,
+				8836D7A829E8AC1A00668B39 /* SplashViewController.swift */,
 				887D529729D780660067D26F /* BuscaminasCollectionViewCell.swift */,
 				8821930D29E8701400841026 /* numbers */,
 				8821930C29E86FC400841026 /* minas */,
@@ -380,7 +386,9 @@
 				8851C56729D6132400AD94EF /* AppDelegate.swift in Sources */,
 				887D529229D778600067D26F /* Celdas.swift in Sources */,
 				8851C56929D6132400AD94EF /* SceneDelegate.swift in Sources */,
+				8836D7A929E8AC1A00668B39 /* SplashViewController.swift in Sources */,
 				887D529429D7790B0067D26F /* Buscaminas.swift in Sources */,
+				8836D7AB29E8ACE300668B39 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
