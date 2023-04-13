@@ -105,15 +105,16 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-nM-dcg" userLabel="Header Stack View">
-                                <rect key="frame" x="0.0" y="134" width="375" height="125"/>
+                                <rect key="frame" x="16" y="134" width="375" height="125"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtw-N0-ssr">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiN-c6-YEc">
                                         <rect key="frame" x="0.0" y="45.333333333333343" width="125" height="34.333333333333343"/>
-                                        <color key="tintColor" red="0.8156862855" green="0.36470589040000001" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Juego nuevo"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Juego nuevo" cornerStyle="fixed" titleAlignment="automatic"/>
                                         <connections>
-                                            <action selector="newGame:" destination="der-gT-GXK" eventType="touchUpInside" id="K4j-VT-D7f"/>
+                                            <action selector="newGame:" destination="der-gT-GXK" eventType="touchUpInside" id="yId-eA-fRs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfI-YS-hby" userLabel="Flag Button">
@@ -189,10 +190,10 @@
                             <constraint firstItem="f8r-Yv-tQF" firstAttribute="top" secondItem="fXR-nM-dcg" secondAttribute="bottom" id="NQ4-YE-6Tp"/>
                             <constraint firstItem="f8r-Yv-tQF" firstAttribute="trailing" secondItem="vIW-V5-6Aq" secondAttribute="trailing" id="RNr-6c-MIc"/>
                             <constraint firstItem="vTq-xB-v6f" firstAttribute="leading" secondItem="1vV-mV-lul" secondAttribute="leading" id="RpU-SB-AtA"/>
+                            <constraint firstItem="fXR-nM-dcg" firstAttribute="leading" secondItem="vIW-V5-6Aq" secondAttribute="leading" constant="16" id="Uip-1X-1Zv"/>
                             <constraint firstItem="vTq-xB-v6f" firstAttribute="trailing" secondItem="1vV-mV-lul" secondAttribute="trailing" id="eAL-AQ-aTT"/>
                             <constraint firstItem="fXR-nM-dcg" firstAttribute="top" secondItem="vTq-xB-v6f" secondAttribute="bottom" id="jFV-vq-RiQ"/>
                             <constraint firstItem="vTq-xB-v6f" firstAttribute="top" secondItem="vIW-V5-6Aq" secondAttribute="top" id="nsS-en-id9"/>
-                            <constraint firstItem="fXR-nM-dcg" firstAttribute="leading" secondItem="vIW-V5-6Aq" secondAttribute="leading" id="sUb-Yb-yQc"/>
                         </constraints>
                     </view>
                     <connections>
