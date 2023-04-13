@@ -105,23 +105,24 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-nM-dcg" userLabel="Header Stack View">
-                                <rect key="frame" x="0.0" y="134" width="500" height="125"/>
+                                <rect key="frame" x="0.0" y="134" width="375" height="125"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtw-N0-ssr">
                                         <rect key="frame" x="0.0" y="45.333333333333343" width="125" height="34.333333333333343"/>
                                         <color key="tintColor" red="0.8156862855" green="0.36470589040000001" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Jugar"/>
+                                        <connections>
+                                            <action selector="newGame:" destination="der-gT-GXK" eventType="touchUpInside" id="K4j-VT-D7f"/>
+                                        </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dzD-O7-5go" userLabel="Left Buttons Stack View">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfI-YS-hby" userLabel="Flag Button">
                                         <rect key="frame" x="125" y="50.666666666666657" width="125" height="24"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfI-YS-hby" userLabel="Flag Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="24"/>
-                                                <state key="normal" image="flag.png"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                        <state key="normal" image="flag.png"/>
+                                        <connections>
+                                            <action selector="flagButton:" destination="der-gT-GXK" eventType="touchUpInside" id="uSQ-8A-FtH"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJ1-0y-TJd" userLabel="Stopwatch Label">
                                         <rect key="frame" x="250" y="37.666666666666657" width="125" height="50"/>
                                         <constraints>
@@ -132,9 +133,6 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="pTK-Z6-9kW" userLabel="Right Buttons Stack View">
-                                        <rect key="frame" x="375" y="37.666666666666657" width="125" height="50"/>
-                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="1MN-oq-atD"/>
@@ -206,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Omk-mp-FVu" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1531" y="3"/>
+            <point key="canvasLocation" x="1530.534351145038" y="2.8169014084507045"/>
         </scene>
     </scenes>
     <resources>
