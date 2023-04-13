@@ -9,6 +9,7 @@ import UIKit
 
 class BuscaminasCollectionViewCell: UICollectionViewCell {
     var celda: Celdas?
+
     @IBOutlet weak var imvCelda: UIImageView!
     @IBOutlet weak var imvOverCelda: UIImageView!
     
