@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BuscaminasV1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png" translatesAutoresizingMaskIntoConstraints="NO" id="M5Z-2J-oiW">
-                                <rect key="frame" x="65" y="290" width="260" height="264"/>
+                                <rect key="frame" x="66.666666666666686" y="294" width="260" height="264"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="qBB-o6-QUw"/>
                                     <constraint firstAttribute="height" constant="264" id="sYx-cy-6tJ"/>
@@ -40,11 +40,11 @@
             <objects>
                 <viewController id="z3B-P2-oAZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q8w-ZT-nu4">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUSCAMINAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1a-Sk-sei">
-                                <rect key="frame" x="112.66666666666667" y="62" width="164.66666666666663" height="63"/>
+                                <rect key="frame" x="114.33333333333333" y="74" width="164.33333333333337" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="QQr-lp-1Km"/>
                                     <constraint firstAttribute="width" constant="164.5" id="oMZ-b9-Wlc"/>
@@ -54,13 +54,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="records.png" translatesAutoresizingMaskIntoConstraints="NO" id="LK3-Hg-1qj">
-                                <rect key="frame" x="107" y="434.33333333333331" width="176" height="142.99999999999994"/>
+                                <rect key="frame" x="107" y="436.33333333333331" width="179" height="145.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LK3-Hg-1qj" secondAttribute="height" multiplier="107:87" id="kKp-Be-84T"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnplay.png" translatesAutoresizingMaskIntoConstraints="NO" id="tkH-XK-6hP">
-                                <rect key="frame" x="107" y="288" width="176" height="131.33333333333337"/>
+                                <rect key="frame" x="107" y="288" width="179" height="133.33333333333337"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="tkH-XK-6hP" secondAttribute="height" multiplier="216:161" id="Su8-8D-37C"/>
                                 </constraints>
@@ -91,11 +91,11 @@
             <objects>
                 <viewController id="der-gT-GXK" customClass="ViewController" customModule="BuscaminasV1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1vV-mV-lul">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buscaminas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTq-xB-v6f">
-                                <rect key="frame" x="0.0" y="47" width="389.33333333333331" height="75"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="Fpf-pb-aiv"/>
                                 </constraints>
@@ -105,25 +105,25 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-nM-dcg" userLabel="Header Stack View">
-                                <rect key="frame" x="0.0" y="122" width="389.33333333333331" height="125"/>
+                                <rect key="frame" x="0.0" y="134" width="500" height="125"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtw-N0-ssr">
-                                        <rect key="frame" x="0.0" y="45.333333333333343" width="97.333333333333329" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="45.333333333333343" width="125" height="34.333333333333343"/>
                                         <color key="tintColor" red="0.8156862855" green="0.36470589040000001" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Jugar"/>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dzD-O7-5go" userLabel="Left Buttons Stack View">
-                                        <rect key="frame" x="97.333333333333343" y="50.666666666666657" width="97.333333333333343" height="24"/>
+                                        <rect key="frame" x="125" y="50.666666666666657" width="125" height="24"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfI-YS-hby" userLabel="Flag Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="24"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="24"/>
                                                 <state key="normal" image="flag.png"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJ1-0y-TJd" userLabel="Stopwatch Label">
-                                        <rect key="frame" x="194.66666666666666" y="37.666666666666657" width="97.333333333333343" height="50"/>
+                                        <rect key="frame" x="250" y="37.666666666666657" width="125" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="fFi-6K-GIe"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="pIH-hn-rKK"/>
@@ -133,7 +133,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="pTK-Z6-9kW" userLabel="Right Buttons Stack View">
-                                        <rect key="frame" x="292" y="37.666666666666657" width="97.333333333333314" height="50"/>
+                                        <rect key="frame" x="375" y="37.666666666666657" width="125" height="50"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -141,7 +141,7 @@
                                 </constraints>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f8r-Yv-tQF">
-                                <rect key="frame" x="0.0" y="247" width="389.33333333333331" height="563"/>
+                                <rect key="frame" x="0.0" y="259" width="393" height="559"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="H9W-65-i4h">
                                     <size key="itemSize" width="24" height="24"/>
@@ -187,7 +187,6 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="f8r-Yv-tQF" firstAttribute="leading" secondItem="vIW-V5-6Aq" secondAttribute="leading" id="0EX-fy-vz4"/>
-                            <constraint firstItem="fXR-nM-dcg" firstAttribute="trailing" secondItem="vIW-V5-6Aq" secondAttribute="trailing" id="BnB-4X-jBl"/>
                             <constraint firstItem="f8r-Yv-tQF" firstAttribute="bottom" secondItem="vIW-V5-6Aq" secondAttribute="bottom" id="Fro-9C-JwC"/>
                             <constraint firstItem="f8r-Yv-tQF" firstAttribute="top" secondItem="fXR-nM-dcg" secondAttribute="bottom" id="NQ4-YE-6Tp"/>
                             <constraint firstItem="f8r-Yv-tQF" firstAttribute="trailing" secondItem="vIW-V5-6Aq" secondAttribute="trailing" id="RNr-6c-MIc"/>
@@ -199,13 +198,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnFlag" destination="kfI-YS-hby" id="NmV-0j-G3s"/>
                         <outlet property="collectionView" destination="f8r-Yv-tQF" id="MDS-dU-8I4"/>
+                        <outlet property="lblTiempoRecord" destination="GJ1-0y-TJd" id="ate-t1-fCY"/>
                         <outlet property="stopwatchLabel" destination="GJ1-0y-TJd" id="Jbo-0n-zsH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Omk-mp-FVu" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1422" y="2"/>
+            <point key="canvasLocation" x="1531" y="3"/>
         </scene>
     </scenes>
     <resources>
