@@ -9,8 +9,8 @@ import UIKit
 
 class Celdas: NSObject {
     var mina = false
-    var vecinodeMina:Int?
-    var isFlagged = false
-    var isOpen = false
+    var vecinoDeMina:Int?
+    var tieneBandera = false
+    var celdaAbierta = false
     var imageName = ""
 }

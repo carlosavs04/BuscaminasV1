@@ -22,10 +22,10 @@ class Buscaminas: NSObject {
             celdas.append(field)
         }
         
-        //Genera las celdas restantes en el buscaminas
+        //Genera las celdas restantes en el tablero
         for _ in 1...(numeroCeldas - numeroMinas) {
             let field = Celdas()
-            field.vecinodeMina = 0
+            field.vecinoDeMina = 0
             field.imageName = "blank"
             celdas.append(field)
         }
@@ -41,25 +41,25 @@ class Buscaminas: NSObject {
         // Calcular el número de celdas vecinas a las minas
         for i in 0..<numeroCeldas {
             if celdas[i].mina {
-                contarMinas(row: i / n - 1, col: i % n - 1)
-                contarMinas(row: i / n - 1, col: i % n)
-                contarMinas(row: i / n - 1, col: i % n + 1)
-                contarMinas(row: i / n, col: i % n - 1)
-                contarMinas(row: i / n, col: i % n + 1)
-                contarMinas(row: i / n + 1, col: i % n - 1)
-                contarMinas(row: i / n + 1, col: i % n)
-                contarMinas(row: i / n + 1, col: i % n + 1)
+                contarCeldas(row: i / n - 1, col: i % n - 1)
+                contarCeldas(row: i / n - 1, col: i % n)
+                contarCeldas(row: i / n - 1, col: i % n + 1)
+                contarCeldas(row: i / n, col: i % n - 1)
+                contarCeldas(row: i / n, col: i % n + 1)
+                contarCeldas(row: i / n + 1, col: i % n - 1)
+                contarCeldas(row: i / n + 1, col: i % n)
+                contarCeldas(row: i / n + 1, col: i % n + 1)
             }
         }
         
         return celdas
     }
     
-    func contarMinas(row: Int, col: Int) {
+    func contarCeldas(row: Int, col: Int) {
         if (row > -1 && row < n && col > -1 && col < n && !celdas[row * n + col].mina) {
             let field = celdas[row * n + col]
-            field.vecinodeMina! += 1
-            field.imageName = "\(field.vecinodeMina!)"
+            field.vecinoDeMina! += 1
+            field.imageName = "\(field.vecinoDeMina!)"
         }
     }
 

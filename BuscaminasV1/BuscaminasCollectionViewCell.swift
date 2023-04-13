@@ -20,7 +20,7 @@ class BuscaminasCollectionViewCell: UICollectionViewCell {
         imvCelda.alpha = 1
         
         // Ubicar las celdas que han sido descubiertas
-        if (celda?.isOpen)! {
+        if (celda?.celdaAbierta)! {
             imvOverCelda.alpha = 0
         }
         else {
