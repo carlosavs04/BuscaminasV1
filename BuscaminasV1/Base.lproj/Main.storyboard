@@ -111,7 +111,7 @@
                                         <rect key="frame" x="0.0" y="45.333333333333343" width="125" height="34.333333333333343"/>
                                         <color key="tintColor" red="0.8156862855" green="0.36470589040000001" blue="0.29803922770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Jugar"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Juego nuevo"/>
                                         <connections>
                                             <action selector="newGame:" destination="der-gT-GXK" eventType="touchUpInside" id="K4j-VT-D7f"/>
                                         </connections>
@@ -119,6 +119,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfI-YS-hby" userLabel="Flag Button">
                                         <rect key="frame" x="125" y="50.666666666666657" width="125" height="24"/>
                                         <state key="normal" image="flagbutton.png"/>
+                                        <connections>
+                                            <action selector="flagModeCambiar:" destination="der-gT-GXK" eventType="touchUpInside" id="0wH-54-2rN"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJ1-0y-TJd" userLabel="Lbl Tiempo Record">
                                         <rect key="frame" x="250" y="37.666666666666657" width="125" height="50"/>

@@ -55,6 +55,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Reiniciar la vista si se inicia un nuevo juego
         if nuevoJuego {
             collectionView.reloadData()
+            
         }
         
         // Setear delegados
@@ -256,7 +257,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         flagMode = !flagMode
         
         if flagMode {
-            btnFlag.setImage(UIImage(named: "flagbuttontoggled"), for: .normal)
+            btnFlag.setImage(UIImage(named: "flaggbuttontoggled"), for: .normal)
         }
         else {
             btnFlag.setImage(UIImage(named: "flagbutton"), for: .normal)
@@ -325,7 +326,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     // Cambiar a flag mode cuando se toque el botón
-    @IBAction func flagButton(_ sender: UIButton) {
+    
+    @IBAction func flagModeCambiar(_ sender: Any) {
         cambiarFlagMode()
     }
     
