@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import AVFoundation
 class MainViewController: UIViewController {
 
     
@@ -14,10 +14,14 @@ class MainViewController: UIViewController {
     
     
     @IBOutlet weak var btnrecords: UIButton!
-    
+    var reproductor = AVAudioPlayer()
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        musica()
+
+        reproductor.play()
+        
         btnplay.layer.shadowColor = UIColor.black.cgColor
         btnplay.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
         btnplay.layer.shadowRadius = 9.0
@@ -35,14 +39,41 @@ class MainViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func musica()
+    {
+        if let rutaTrack = Bundle.main.path(forResource: "(8-Bit) Paradise City- Guns N' Roses", ofType: "mp3")
+        {
+            let urlTrack = URL(fileURLWithPath: rutaTrack)
+            do
+            {
+                try reproductor = AVAudioPlayer(contentsOf: urlTrack)
+            }
+            catch
+            {
+                let error = UIAlertController(title: "ERROR", message: "No se pudó cargar adecuadamente la canción", preferredStyle: .alert)
+                let ok = UIAlertAction(title: "Aceptar", style: .default)
+                error.addAction(ok)
+                self.present(error, animated: true)
+            }
+        }
+        else
+        {
+            let error = UIAlertController(title: "ERROR", message: "No se pudó cargar adecuadamente la canción", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "Aceptar", style: .default)
+            error.addAction(ok)
+            self.present(error, animated: true)
+        }
+        
     }
-    */
-
+    
+    
+    
+    @IBAction func pauseMusic(_ sender: UIButton)
+    {
+        if reproductor.isPlaying
+        {
+            reproductor.pause()
+        }
+    }
+    
 }

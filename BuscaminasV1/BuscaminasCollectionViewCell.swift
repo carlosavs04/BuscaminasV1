@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import AVFoundation
 class BuscaminasCollectionViewCell: UICollectionViewCell {
     var celda: Celdas?
 

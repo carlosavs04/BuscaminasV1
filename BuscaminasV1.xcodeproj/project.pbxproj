@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		881C623029E9B273001F5057 /* (8-Bit) Paradise City- Guns N' Roses.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 881C622F29E9B273001F5057 /* (8-Bit) Paradise City- Guns N' Roses.mp3 */; };
+		881C623729E9B529001F5057 /* soundtrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 881C623929E9B529001F5057 /* soundtrack.mp3 */; };
 		8821931529E8721200841026 /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8821930E29E8721200841026 /* 3@2x.png */; };
 		8821931629E8721200841026 /* 5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8821930F29E8721200841026 /* 5@2x.png */; };
 		8821931729E8721200841026 /* 6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8821931029E8721200841026 /* 6@2x.png */; };
@@ -61,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		881C622F29E9B273001F5057 /* (8-Bit) Paradise City- Guns N' Roses.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "(8-Bit) Paradise City- Guns N' Roses.mp3"; path = "imgs_buscaminitas/(8-Bit) Paradise City- Guns N' Roses.mp3"; sourceTree = SOURCE_ROOT; };
+		881C623829E9B529001F5057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/soundtrack.mp3; sourceTree = "<group>"; };
 		8821930E29E8721200841026 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3@2x.png"; path = "imgs_buscaminitas/3@2x.png"; sourceTree = SOURCE_ROOT; };
 		8821930F29E8721200841026 /* 5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "5@2x.png"; path = "imgs_buscaminitas/5@2x.png"; sourceTree = SOURCE_ROOT; };
 		8821931029E8721200841026 /* 6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "6@2x.png"; path = "imgs_buscaminitas/6@2x.png"; sourceTree = SOURCE_ROOT; };
@@ -126,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		881C622E29E9B251001F5057 /* songs */ = {
+			isa = PBXGroup;
+			children = (
+				881C623929E9B529001F5057 /* soundtrack.mp3 */,
+				881C622F29E9B273001F5057 /* (8-Bit) Paradise City- Guns N' Roses.mp3 */,
+			);
+			path = songs;
+			sourceTree = "<group>";
+		};
 		8821930C29E86FC400841026 /* minas */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +195,7 @@
 				8836D7AC29E8B7EC00668B39 /* RecordsViewController.swift */,
 				8836D7A829E8AC1A00668B39 /* SplashViewController.swift */,
 				887D529729D780660067D26F /* BuscaminasCollectionViewCell.swift */,
+				881C622E29E9B251001F5057 /* songs */,
 				8821930D29E8701400841026 /* numbers */,
 				8821930C29E86FC400841026 /* minas */,
 				887E26EC29D784F5000BC93C /* celdas */,
@@ -348,6 +362,8 @@
 				8851C57029D6132400AD94EF /* Assets.xcassets in Resources */,
 				8821931B29E8721200841026 /* 8.png in Resources */,
 				8821932B29E872D100841026 /* blank@2x.png in Resources */,
+				881C623729E9B529001F5057 /* soundtrack.mp3 in Resources */,
+				881C623029E9B273001F5057 /* (8-Bit) Paradise City- Guns N' Roses.mp3 in Resources */,
 				8821931A29E8721200841026 /* 2@2x.png in Resources */,
 				887E26F029D7854B000BC93C /* cellover.png in Resources */,
 				8821931D29E8725200841026 /* 1.png in Resources */,
@@ -429,6 +445,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		881C623929E9B529001F5057 /* soundtrack.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				881C623829E9B529001F5057 /* Base */,
+			);
+			name = soundtrack.mp3;
+			path = imgs_buscaminitas;
+			sourceTree = SOURCE_ROOT;
+		};
 		8851C56C29D6132400AD94EF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -576,6 +601,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -603,6 +629,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
