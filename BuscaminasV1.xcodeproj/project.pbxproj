@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		881C623029E9B273001F5057 /* (8-Bit) Paradise City- Guns N' Roses.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 881C622F29E9B273001F5057 /* (8-Bit) Paradise City- Guns N' Roses.mp3 */; };
 		881C623729E9B529001F5057 /* soundtrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 881C623929E9B529001F5057 /* soundtrack.mp3 */; };
+		881C623C29E9BC1F001F5057 /* Explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 881C623E29E9BC1F001F5057 /* Explosion.mp3 */; };
+		881C624129E9BC39001F5057 /* Victory.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 881C624329E9BC39001F5057 /* Victory.mp3 */; };
 		8821931529E8721200841026 /* 3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8821930E29E8721200841026 /* 3@2x.png */; };
 		8821931629E8721200841026 /* 5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8821930F29E8721200841026 /* 5@2x.png */; };
 		8821931729E8721200841026 /* 6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8821931029E8721200841026 /* 6@2x.png */; };
@@ -65,6 +67,8 @@
 /* Begin PBXFileReference section */
 		881C622F29E9B273001F5057 /* (8-Bit) Paradise City- Guns N' Roses.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "(8-Bit) Paradise City- Guns N' Roses.mp3"; path = "imgs_buscaminitas/(8-Bit) Paradise City- Guns N' Roses.mp3"; sourceTree = SOURCE_ROOT; };
 		881C623829E9B529001F5057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/soundtrack.mp3; sourceTree = "<group>"; };
+		881C623D29E9BC1F001F5057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/Explosion.mp3; sourceTree = "<group>"; };
+		881C624229E9BC39001F5057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Base; path = Base.lproj/Victory.mp3; sourceTree = "<group>"; };
 		8821930E29E8721200841026 /* 3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "3@2x.png"; path = "imgs_buscaminitas/3@2x.png"; sourceTree = SOURCE_ROOT; };
 		8821930F29E8721200841026 /* 5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "5@2x.png"; path = "imgs_buscaminitas/5@2x.png"; sourceTree = SOURCE_ROOT; };
 		8821931029E8721200841026 /* 6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "6@2x.png"; path = "imgs_buscaminitas/6@2x.png"; sourceTree = SOURCE_ROOT; };
@@ -133,6 +137,8 @@
 		881C622E29E9B251001F5057 /* songs */ = {
 			isa = PBXGroup;
 			children = (
+				881C624329E9BC39001F5057 /* Victory.mp3 */,
+				881C623E29E9BC1F001F5057 /* Explosion.mp3 */,
 				881C623929E9B529001F5057 /* soundtrack.mp3 */,
 				881C622F29E9B273001F5057 /* (8-Bit) Paradise City- Guns N' Roses.mp3 */,
 			);
@@ -357,6 +363,7 @@
 				8821932629E8729500841026 /* flaggbuttontoggled.png in Resources */,
 				8821932129E8727000841026 /* mine.png in Resources */,
 				8851C59B29D615AD00AD94EF /* records.png in Resources */,
+				881C624129E9BC39001F5057 /* Victory.mp3 in Resources */,
 				8851C57329D6132400AD94EF /* LaunchScreen.storyboard in Resources */,
 				8821931829E8721200841026 /* 7@2x.png in Resources */,
 				8851C57029D6132400AD94EF /* Assets.xcassets in Resources */,
@@ -375,6 +382,7 @@
 				8851C56E29D6132400AD94EF /* Main.storyboard in Resources */,
 				8851C59729D6136700AD94EF /* kisspng-microsoft-minesweeper-the-minesweeper-puzzle-video-mines-5abee056d64556.3968232815224587108777 (1).png in Resources */,
 				8821931F29E8726200841026 /* explodedmine@3x.png in Resources */,
+				881C623C29E9BC1F001F5057 /* Explosion.mp3 in Resources */,
 				8821932729E8729500841026 /* flagbutton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +459,24 @@
 				881C623829E9B529001F5057 /* Base */,
 			);
 			name = soundtrack.mp3;
+			path = imgs_buscaminitas;
+			sourceTree = SOURCE_ROOT;
+		};
+		881C623E29E9BC1F001F5057 /* Explosion.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				881C623D29E9BC1F001F5057 /* Base */,
+			);
+			name = Explosion.mp3;
+			path = imgs_buscaminitas;
+			sourceTree = SOURCE_ROOT;
+		};
+		881C624329E9BC39001F5057 /* Victory.mp3 */ = {
+			isa = PBXVariantGroup;
+			children = (
+				881C624229E9BC39001F5057 /* Base */,
+			);
+			name = Victory.mp3;
 			path = imgs_buscaminitas;
 			sourceTree = SOURCE_ROOT;
 		};

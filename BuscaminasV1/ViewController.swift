@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     var celdas = [Celdas]()
     var buscaminas = Buscaminas()
+    var reproductor = AVAudioPlayer()
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var btnFlag: UIButton!
@@ -28,11 +30,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var tiempoRecord:Timer?
     var millis:Float = 0
     
-    override func viewDidLoad() {
+
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         btnplay.layer.cornerRadius = 7.0
-        
+       
         iniciarJuego()
     }
     
@@ -277,10 +282,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         var title = ""
         var message = ""
         
-        if victoria {
+        if victoria
+        {
             // Si gana se abren todas las celdas que no sean minas
-            for i in 0..<celdas.count {
-                if !celdas[i].celdaAbierta && !celdas[i].mina {
+            for i in 0..<celdas.count
+            {
+                if !celdas[i].celdaAbierta && !celdas[i].mina
+                {
                     let celda = collectionView.cellForItem(at: IndexPath(row: i, section: 0)) as! BuscaminasCollectionViewCell
                     celda.descubrirCelda()
                 }
@@ -289,7 +297,28 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             title = "¡Felicidades, has ganado!"
             let segundos = String(format: "%.2f", millis/1000)
             message = "Terminaste en \(segundos) segundos"
-        } else {
+            musica()
+            reproductor.play()
+            
+            
+            
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
+          
+            alert.addTextField
+            { textField in
+                    textField.placeholder = "Ingresa tu nombre"
+                    textField.borderStyle = .roundedRect
+            }
+            alert.addAction(alertAction)
+            present(alert, animated: true, completion: nil)
+            
+            self.tiempoRecord?.invalidate()
+            
+            
+            
+        } else
+        {
             // Si pierde se abren todas las minas que no tengan bandera y se muestran todas las celdas que tenían banderas incorrectas
             for i in 0..<celdas.count {
                 if (celdas[i].mina && !celdas[i].tieneBandera) || (!celdas[i].mina && celdas[i].tieneBandera) {
@@ -305,6 +334,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Mostrar el mensaje al finalizar la partida
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
+      
         alert.addAction(alertAction)
         present(alert, animated: true, completion: nil)
         
@@ -371,5 +401,22 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         self.dismiss(animated: true)
     }
     
+    func musica()
+    {
+        if let rutaTrack = Bundle.main.path(forResource: "Victory", ofType: "mp3")
+        {
+            let urlTrack = URL(fileURLWithPath: rutaTrack)
+            do
+            {
+                try reproductor = AVAudioPlayer(contentsOf: urlTrack)
+            }
+            catch
+            {
+               print("no")
+            }
+        }
+      
+        
+    }
 }
 

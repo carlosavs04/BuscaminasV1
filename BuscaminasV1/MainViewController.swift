@@ -15,12 +15,17 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var btnrecords: UIButton!
     var reproductor = AVAudioPlayer()
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    
+    override func viewWillAppear(_ animated: Bool) {
         musica()
 
         reproductor.play()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+     
         
         btnplay.layer.shadowColor = UIColor.black.cgColor
         btnplay.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)

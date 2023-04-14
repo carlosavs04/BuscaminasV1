@@ -9,7 +9,8 @@ import UIKit
 import AVFoundation
 class BuscaminasCollectionViewCell: UICollectionViewCell {
     var celda: Celdas?
-
+    var reproductor = AVAudioPlayer()
+    
     @IBOutlet weak var imvCelda: UIImageView!
     @IBOutlet weak var imvOverCelda: UIImageView!
     
@@ -55,7 +56,28 @@ class BuscaminasCollectionViewCell: UICollectionViewCell {
         imvCelda.image = UIImage(named: "explodedmine")
         celda?.imageName = "explodedmine"
         descubrirCelda()
+        musica()
+        reproductor.play()
     }
     
+    func musica()
+    {
+        if let rutaTrack = Bundle.main.path(forResource: "Explosion", ofType: "mp3")
+        {
+            let urlTrack = URL(fileURLWithPath: rutaTrack)
+            do
+            {
+                try reproductor = AVAudioPlayer(contentsOf: urlTrack)
+            }
+            catch
+            {
+              print("no")
+              
+            }
+        }
+      
+        
+    }
+
     
 }
