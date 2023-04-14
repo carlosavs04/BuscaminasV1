@@ -60,24 +60,15 @@ class BuscaminasCollectionViewCell: UICollectionViewCell {
         reproductor.play()
     }
     
-    func musica()
-    {
-        if let rutaTrack = Bundle.main.path(forResource: "Explosion", ofType: "mp3")
-        {
+    func musica() {
+        if let rutaTrack = Bundle.main.path(forResource: "Explosion", ofType: "mp3") {
             let urlTrack = URL(fileURLWithPath: rutaTrack)
-            do
-            {
+            do {
                 try reproductor = AVAudioPlayer(contentsOf: urlTrack)
             }
-            catch
-            {
-              print("no")
-              
+            catch {
+                print("no")
             }
         }
-      
-        
     }
-
-    
 }

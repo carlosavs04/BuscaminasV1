@@ -26,6 +26,7 @@
 		8821932729E8729500841026 /* flagbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8821932429E8729500841026 /* flagbutton.png */; };
 		8821932929E872A200841026 /* wrongflag.png in Resources */ = {isa = PBXBuildFile; fileRef = 8821932829E872A200841026 /* wrongflag.png */; };
 		8821932B29E872D100841026 /* blank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8821932A29E872D100841026 /* blank@2x.png */; };
+		8833B19129E9CB5B00374FE2 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833B19029E9CB5B00374FE2 /* Records.swift */; };
 		8836D7A929E8AC1A00668B39 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8836D7A829E8AC1A00668B39 /* SplashViewController.swift */; };
 		8836D7AB29E8ACE300668B39 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8836D7AA29E8ACE300668B39 /* MainViewController.swift */; };
 		8836D7AD29E8B7EC00668B39 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8836D7AC29E8B7EC00668B39 /* RecordsViewController.swift */; };
@@ -84,6 +85,7 @@
 		8821932429E8729500841026 /* flagbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flagbutton.png; path = imgs_buscaminitas/flagbutton.png; sourceTree = SOURCE_ROOT; };
 		8821932829E872A200841026 /* wrongflag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wrongflag.png; path = imgs_buscaminitas/wrongflag.png; sourceTree = SOURCE_ROOT; };
 		8821932A29E872D100841026 /* blank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blank@2x.png"; path = "imgs_buscaminitas/blank@2x.png"; sourceTree = SOURCE_ROOT; };
+		8833B19029E9CB5B00374FE2 /* Records.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
 		8836D7A829E8AC1A00668B39 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		8836D7AA29E8ACE300668B39 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8836D7AC29E8B7EC00668B39 /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				8851C56629D6132400AD94EF /* AppDelegate.swift */,
 				8851C56829D6132400AD94EF /* SceneDelegate.swift */,
 				887D529129D778600067D26F /* Celdas.swift */,
+				8833B19029E9CB5B00374FE2 /* Records.swift */,
 				887D529329D7790B0067D26F /* Buscaminas.swift */,
 				8851C56A29D6132400AD94EF /* ViewController.swift */,
 				8836D7AA29E8ACE300668B39 /* MainViewController.swift */,
@@ -416,6 +419,7 @@
 				8851C56929D6132400AD94EF /* SceneDelegate.swift in Sources */,
 				8836D7A929E8AC1A00668B39 /* SplashViewController.swift in Sources */,
 				887D529429D7790B0067D26F /* Buscaminas.swift in Sources */,
+				8833B19129E9CB5B00374FE2 /* Records.swift in Sources */,
 				8836D7AB29E8ACE300668B39 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

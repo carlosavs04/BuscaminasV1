@@ -29,15 +29,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var nuevoJuego = false
     var tiempoRecord:Timer?
     var millis:Float = 0
+    let records = Records.sharedData()
     
 
-    
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         btnplay.layer.cornerRadius = 7.0
-       
         iniciarJuego()
     }
     
@@ -62,7 +60,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Reiniciar la vista si se inicia un nuevo juego
         if nuevoJuego {
             collectionView.reloadData()
-            
         }
         
         // Setear delegados
@@ -265,8 +262,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         if flagMode {
             btnFlag.setImage(UIImage(named: "flaggbuttontoggled"), for: .normal)
-        }
-        else {
+        } else {
             btnFlag.setImage(UIImage(named: "flagbutton"), for: .normal)
         }
     }
@@ -282,8 +278,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         var title = ""
         var message = ""
         
-        if victoria
-        {
+        if victoria {
             // Si gana se abren todas las celdas que no sean minas
             for i in 0..<celdas.count
             {
@@ -300,8 +295,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             musica()
             reproductor.play()
             
-            
-            
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
           
@@ -314,9 +307,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             present(alert, animated: true, completion: nil)
             
             self.tiempoRecord?.invalidate()
-            
-            
-            
         } else
         {
             // Si pierde se abren todas las minas que no tengan bandera y se muestran todas las celdas que tenían banderas incorrectas
@@ -396,27 +386,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     
-    @IBAction func backtoMain(_ sender: Any)
-    {
+    @IBAction func backtoMain(_ sender: Any) {
         self.dismiss(animated: true)
     }
     
-    func musica()
-    {
-        if let rutaTrack = Bundle.main.path(forResource: "Victory", ofType: "mp3")
-        {
+    func musica() {
+        if let rutaTrack = Bundle.main.path(forResource: "Victory", ofType: "mp3") {
             let urlTrack = URL(fileURLWithPath: rutaTrack)
-            do
-            {
+            do {
                 try reproductor = AVAudioPlayer(contentsOf: urlTrack)
-            }
-            catch
-            {
+            } catch {
                print("no")
             }
         }
-      
-        
     }
 }
 
