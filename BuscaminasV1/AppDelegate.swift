@@ -46,8 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let archivo = try Data.init(contentsOf: urlArchivo)
             let diccionario = try PropertyListSerialization.propertyList(from: archivo, format: nil) as! [String:Any]
             
-            records.jugadores = diccionario["play"] as! [String]
-            records.tiempo = diccionario["time"] as! [Float]
+            records.jugadoresTiempo = diccionario["rcd"] as! [String:Float]
         } catch {
             print("Algo salió mal")
         }
