@@ -31,7 +31,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     var millis:Float = 0
     let records = Records.sharedData()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -296,7 +295,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             reproductor.play()
             
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-            let alertAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
+            let alertAction = UIAlertAction(title: "Okay", style: .default) { [weak self] _ in
+                guard let self = self else { return }
+                if let nombre = alert.textFields?.first?.text {
+                    let tiempo = self.millis / 1000.0
+                    self.records.jugadoresTiempo[nombre] = tiempo
+                }
+            }
           
             alert.addTextField
             { textField in

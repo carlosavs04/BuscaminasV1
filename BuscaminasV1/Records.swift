@@ -8,13 +8,11 @@
 import UIKit
 
 class Records: NSObject {
-    var jugadores: [String]
-    var tiempo: [Float] = []
+    var jugadoresTiempo: [String: Float]
     static var records: Records!
     
     override init() {
-        jugadores = []
-        tiempo = []
+        jugadoresTiempo = ["Carlos": 50.00, "Pablo": 60.00, "Jhon": 70.00, "James": 80.00, "Peter": 90.00]
     }
     
     static func sharedData()->Records {
